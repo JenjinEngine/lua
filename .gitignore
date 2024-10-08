@@ -4,12 +4,8 @@
 *.o
 *.a
 
-manual/manual.html
-
-testes/time.txt
-testes/time-debug.txt
-
-testes/libs/all
-
 temp
 lua
+
+build
+.cache
