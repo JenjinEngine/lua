@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 3.5)
 
 project(lua54 VERSION 5.4 LANGUAGES C)
 
+if (UNIX)
+	add_definitions(-DLUA_USE_POSIX)
+endif()
+
 file (GLOB SOURCES "src/*.c")
 list(REMOVE_ITEM SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/src/onelua.c")
 
